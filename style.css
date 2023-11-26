@@ -1,0 +1,186 @@
+*{
+	margin :0;
+	box-sizing: border-box;
+	font-family: montserrat;
+	background: #F6ECE6;
+
+}
+
+.container{
+	padding-left: 120px;
+	padding-right: 120px;
+	overflow-x: hidden;
+
+}
+.navsection{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 120px;
+	padding-right: 120px;
+	margin-top: 24px;
+	position: sticky;
+
+}
+img{
+	padding: 0px;
+	margin:0px;
+	animation-name: imagemotion;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+}
+.logo{
+	font-size: 24px;
+	font-weight: 800;
+}
+ul{
+	display: flex;
+	max-width: 700px;
+	justify-content: space-between;
+	align-content: center
+}
+ul li{
+	list-style-type: none;
+	margin-left: 24px;
+}
+.hero-section{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.hero-header{
+font-size: 32px;
+line-height: 4rem;
+animation-name: headermotion;
+animation-duration: 3s;
+
+
+}
+p{
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 24px;
+	margin-bottom: 32px;
+}
+.left-hero-container{
+	min-width: 60%;
+
+}
+.right-hero-container{
+	min-width: 50%;
+	position: relative;
+}
+span{
+	font-weight: 800;
+}
+.hero-button{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	background:#E85408;
+	padding:16px 64px;
+	border-radius: 8px;
+	color: white;
+	animation-name: button-motion; 
+	animation-duration: 3s;
+	
+	
+}
+.box1{
+	background: #0A0605;
+	display: flex;
+	font-size: 14px;
+	width:30%;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	height: 64px;
+	position: absolute;
+	top:25%;
+	right:15%;
+	padding-left: 4%;
+	box-shadow: 2px 2px 6px black;
+	animation-name: box-movement1;
+	animation-duration: 4s;
+
+}
+
+
+
+
+
+.box1 p,.box2 p{
+	font-size: 32px;
+	font-weight: 800;
+	background:none;
+	color:white;
+	text-align: center
+
+}
+.box2 p{
+	margin-top: 6px;
+}
+
+.ytext{
+	background:none;
+	color: white;
+}
+.box2{
+	padding-top: -60px;
+	background: #0A0605;
+	display: flex;
+	font-size: 14px;
+	width:30%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 8px;
+	height: 64px;
+	position: absolute;
+	bottom :15%;
+	right:25%;
+	box-shadow: 2px 2px 6px black;
+	padding-top:-10px;
+	animation-name: box-movement;
+	animation-duration: 4s;
+	
+}
+.box2 .ytext{
+	background:none;
+	margin-top: -30px;
+}
+
+/* animations */
+@keyframes headermotion{
+	0% { opacity: 0;
+
+	}
+	100%{ opacity: 1; }
+}
+
+@keyframes button-motion{
+	0%{margin-left: -200px; opacity:0;}
+	50%{ opacity:0; }
+	100%{ margin-left: 0px;opacity:1;}
+}
+
+@keyframes box-movement{
+	0%{ opacity :0 ; right:40%; }
+	50%{ opacity: 0;  }
+	100%{ opacity: 1; right:25%;}
+
+}
+@keyframes box-movement1{
+	0%{ opacity :0 ; right:40%; }
+	50%{ opacity: 0;  }
+	100%{ opacity: 1; right:15%;}
+
+}
+
+@keyframes imagemotion{
+	0% { margin-left: 50%; opacity:0; }
+	100%{ margin-left:0; opacity:1; }
+
+
+
+
+}
